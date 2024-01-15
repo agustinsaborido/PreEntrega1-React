@@ -1,0 +1,31 @@
+.navBar{
+    display: flex;
+    justify-content:space-between;
+    margin: 20px;
+    box-shadow: -4px 2px 40px 0px rgba(171,165,165,0.75);
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+.navBar img{
+    height:50px;
+}
+
+.navBar button{
+    font-style: italic;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    
+}
+button:hover{
+    background-color: rgb(114, 2, 2);
+}
