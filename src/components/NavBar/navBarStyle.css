@@ -8,11 +8,11 @@
 }
 
 .navBar img{
-    height:50px;
+    height:100px;
 }
 
 .navBar button{
-    font-style: italic;
+    
     justify-content: center;
     margin: 10px;
     cursor: pointer;
@@ -28,4 +28,17 @@
 }
 button:hover{
     background-color: rgb(114, 2, 2);
+}
+
+ul{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+
+ul li{
+    margin: 20px;
+    padding: 5px;
+    list-style: none;
 }
