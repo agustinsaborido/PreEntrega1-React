@@ -7,6 +7,9 @@
     background-color:white;
     box-shadow: -4px 2px 40px 0px rgba(171,165,165,0.75);
   }
+  .itemCountContainer h4{
+    color: red;
+  }
   
   .buttonsContainer {
     display:flex;

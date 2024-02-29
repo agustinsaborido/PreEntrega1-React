@@ -2,9 +2,16 @@ import './navBarStyle.css'
 import CartWidget from "../CartWidget/CartWidget"
 import Logo from '../../assets/escudorojo.png'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
+
 
 
 function NavBar () {
+    const [isShowModal, setIsShowModal] = useState(false);
+
+    const clickEnCarrito = () => {
+      setIsShowModal(true);
+    };
 
     return(
         <div className="navBar">
@@ -26,7 +33,11 @@ function NavBar () {
                 
         </ul>
         </nav>
-        <CartWidget number = {7} />
+        <CartWidget 
+        number = {7}
+        clickEnCarrito={clickEnCarrito}
+        isShowModal={isShowModal}
+        />
         </div>
     )
 }

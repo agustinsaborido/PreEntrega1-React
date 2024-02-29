@@ -1,8 +1,9 @@
 import React from 'react';
 import './Item.css'
+import {Link} from 'react-router-dom'
 
 
-function Item({id, name, stock, category, description, img}) {
+function Item({id, name, stock, category, description, img, price}) {
 
     return(
         <article className='CardItem' key={id}>
@@ -13,17 +14,18 @@ function Item({id, name, stock, category, description, img}) {
             <h3 className="Itemheader">{name}</h3>
          </header>
          <section>
-            <p className="info">{description}</p>
-
-            <p className="info">{` stock: ${stock} `}</p>
-
+            {/* <p className="info">Categoría: {category}</p> */}
             
-            <p className="info">{category}</p>
+            <p className="info">{` Stock: ${stock} `}</p>
+            <p className="info">{` Precio: ${price} `}</p>
          </section>
+         <Link to={`item/${id}`} className="Detalle">VER DETALLE</Link>
+         
         </article>
     );
 }
 export default Item
+
 
 // <article className="CardItem">
 // <header className="Header">

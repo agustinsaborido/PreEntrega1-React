@@ -7,19 +7,30 @@
     margin: 10px 30px;
     padding: 10px 15px;
     box-shadow: -4px 2px 40px 0px rgba(255, 255, 255, 0.75);
-
+    text-decoration: none;
+    
+  
 }
 .CardItem img{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     
 }
 .CardItem header{
     text-decoration-line:underline;
-    
+    color: black;    
 }
 
-
+.Detalle{
+    text-align: center;
+    padding: 4px;
+    border: 2px solid #ffffff;
+    border-radius: 13px;
+    background-color:black;
+    cursor: pointer;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 
 /* 

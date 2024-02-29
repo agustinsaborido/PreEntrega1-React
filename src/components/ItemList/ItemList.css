@@ -1,9 +1,18 @@
 .ListItems{
-  border-radius: 5px;
+  /* ;
   margin: 15px;
   padding: 10px 0px;  
-  display: flex;
-  justify-content: center;
+  justify-content:center;
   text-align:center;
-  align-items: center;
+  display: flex; */
+
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap:30px;
+  grid-row-gap:50px;
+  /* width: 60%; */
+  width: 100%;
+  margin:0;
+  padding: 0;
+  
 }
